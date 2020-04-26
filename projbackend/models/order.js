@@ -17,7 +17,9 @@ const ProductCart = mongoose.model("ProductCart",ProductCartSchema);
 var orderSchema = new mongoose.Schema({
 
     products:[ProductCartSchema],
-    transaction_id={},
+    transaction_id:{
+        type:Number
+    },
     amount:{
         type:Number
     },

@@ -82,7 +82,7 @@ exports.isAuthenticated = (req,res,next)=>{
     //req.profile and is set from frontend.
     //req.auth is set from isSignedIn middleware defined up.
     //req.profile._id is also set from frontend.
-    let checker = req.profile && req.auth && req.profile._id === req.auth._id;
+    let checker = req.profile && req.auth && req.profile._id == req.auth._id;
     if(!checker){
         return res.status(403).json({
             message:"Access Denied"
