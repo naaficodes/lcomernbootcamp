@@ -64,7 +64,7 @@ exports.removeCategory=(req,res)=>{
             });
         }
         res.json({
-            message:"Successfully deleted"
+            message:`Successfully Deleted !!`
         });
     });
 };
